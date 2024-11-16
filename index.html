@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriving Nashville</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="Community intelligence platform for Nashville, TN">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Thriving<span>NASHVILLE</span></div>
+        <div class="nav-links">
+            <span class="nav-link" data-section="stories">Community Stories</span>
+            <span class="nav-link" data-section="wellbeing">City Well Being</span>
+            <span class="nav-link" data-section="explorer">Neighborhood Explorer</span>
+            <span class="nav-link" data-section="search">Search</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- City Well Being Section -->
+        <section id="wellbeing" class="content-section active">
+            <header class="page-header">
+                <h1 class="page-title">What does it mean<br>for a community to <span>thrive</span>?</h1>
+                <p>To thrive means to live in a community where everyone has the opportunity to grow, connect, and achieve their fullest potential.</p>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-title">Poverty Rate</h3>
+                    <div class="stat-value">6%</div>
+                    <p class="stat-description">Higher than state average.</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Violent Crime Rate</h3>
+                    <div class="stat-value">10%</div>
+                    <p class="stat-description">Above state averages.</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Life Expectancy</h3>
+                    <div class="stat-value">78</div>
+                    <p class="stat-description">Years on average.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Stories Section -->
+        <section id="stories" class="content-section">
+            <header class="page-header">
+                <h1 class="page-title">Thriving <span>Voices</span>:<br>Sharing Community Stories that Inspire Change</h1>
+            </header>
+
+            <div class="stories-grid">
+                <div class="story-card">
+                    <img src="/api/placeholder/400/200" alt="Community Story" class="story-image">
+                    <div class="story-content">
+                        <h3 class="story-title">Imagine Nashville Calls for Inclusive, Thriving City</h3>
+                        <p class="story-description">The Imagine Nashville initiative, supported by the Community Foundation of Middle Tennessee, envisions a more inclusive city by 20...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="/api/placeholder/400/200" alt="Mental Health" class="story-image">
+                    <div class="story-content">
+                        <h3 class="story-title">Mental Health Crisis Program Gains Community-Wide Support</h3>
+                        <p class="story-description">NashvilleHealth's recent speaker series highlighted a new mental health diversion program that directs...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Neighborhood Explorer Section -->
+        <section id="explorer" class="content-section">
+            <header class="page-header">
+                <h1 class="page-title">Neighborhood <span>Explorer</span></h1>
+            </header>
+            <div id="map"></div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search" class="content-section">
+            <header class="page-header">
+                <h1 class="page-title"><span>Search</span> Resources</h1>
+            </header>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for programs, resources, or organizations...">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
